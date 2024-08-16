@@ -6,9 +6,9 @@ function Counter() {
     return (
             <div>
                 <p>{count}</p>
-                <button onClick={ () => { setCount((count) => count - 1 ) }}>decrement</button>
-                <button style={{margin: '0 8px'}} onClick={ () => { setCount((count) => count = 0 ) }}>reset</button>
-                <button onClick={ () => { setCount((count) => count + 1 ) }}>increment</button>
+                <button onClick={ () => { setCount((count) => count - 1 ) }}>Decrement</button>
+                <button style={{margin: '0 8px'}} onClick={ () => { setCount((count) => count = 0 ) }}>Reset</button>
+                <button onClick={ () => { setCount((count) => count + 1 ) }}>Increment</button>
             </div>
     );
 }
