@@ -12,7 +12,7 @@ import ProfilePage from './components/ProfilePage'
 
 function App() {
   const [count, setCount] = useState(0)
-  const userData = useState("")
+  const [userData, setData] = useState("")
 
   return (
     <>
