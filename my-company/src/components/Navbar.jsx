@@ -8,14 +8,12 @@ function Navbar() {
     }
 
     return (
-        <div>
             <nav>
-                <Link style={linkStyles} to='/home'>Home</Link>
+                <Link style={linkStyles} to='/'>Home</Link>
                 <Link style={linkStyles} to='/about'>About</Link>
                 <Link style={linkStyles} to='/services'>Services</Link>
                 <Link to='/contact'>Contact</Link>
             </nav>
-        </div>
     )
 }
 
