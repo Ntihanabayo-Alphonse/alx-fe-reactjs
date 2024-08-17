@@ -66,10 +66,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
-/* Custom CSS */
-
-nav{
-  background-color: #213547;
-  padding: 15px 20px;
-}
