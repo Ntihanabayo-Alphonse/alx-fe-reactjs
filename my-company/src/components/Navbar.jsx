@@ -8,10 +8,10 @@ function Navbar() {
     }
 
     return (
-            <nav>
-                <Link style={linkStyles} to='/'>Home</Link>
-                <Link style={linkStyles} to='/about'>About</Link>
-                <Link style={linkStyles} to='/services'>Services</Link>
+            <nav style={ { backgroundColor: '#213547', display: 'flex', justifyContent: 'space-around', padding: '15px 0' } }>
+                <Link to='/'>Home</Link>
+                <Link to='/about'>About</Link>
+                <Link to='/services'>Services</Link>
                 <Link to='/contact'>Contact</Link>
             </nav>
     )
