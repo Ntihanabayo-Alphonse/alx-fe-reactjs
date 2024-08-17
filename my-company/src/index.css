@@ -66,3 +66,16 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Custom CSS */
+
+nav{
+  background-color: #213547;
+  padding: 4px 0;
+}
+
+nav li{
+  margin-right: 36px;
+  display: inline-block;
+  list-style: none;
+}
