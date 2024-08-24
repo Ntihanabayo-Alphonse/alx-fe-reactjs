@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import useRecipeStore from '../store/recipeStore';
+import useRecipeStore from './recipeStore';
 import DeleteRecipeButton from "./DeleteRecipeButton"
 import EditRecipeForm from "./EditRecipeForm"
 
