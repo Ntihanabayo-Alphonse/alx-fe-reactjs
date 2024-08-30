@@ -5,20 +5,20 @@ const EditRecipeForm = ({recipe, onClose}) => {
 
     const updateRecipe = useRecipeStore((state) => state.updateRecipe);
 
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
+  const [title, setTitle] = useState(recipe.title);
+  const [description, setDescription] = useState(recipe.description);
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const newRecipe = {
-      id: recipe ? recipe.id : Date.now(),
+    const updatedRecipe = {
+      ...recipe,
       title,
       description,
     };
 
     if (recipe) {
-      updateRecipe(newRecipe);
+      updateRecipe(updatedRecipe);
     }
 
     onClose();
@@ -43,7 +43,8 @@ const EditRecipeForm = ({recipe, onClose}) => {
           required
         />
       </div>
-      <button type="submit">{!recipe ? 'Update' : 'Add'} Recipe</button>
+      <button type="submit">Update Recipe</button>
+      <button type="button" onClick={onClose}>Cancel</button>
     </form>
   );
 }
