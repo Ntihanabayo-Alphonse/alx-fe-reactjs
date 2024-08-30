@@ -1,20 +1,16 @@
 import React, {useState} from 'react'
 import useRecipeStore from './recipeStore';
 
-const DeleteRecipeButton = () => {
-    const { recipes, deleteRecipe} = useRecipeStore();
+const DeleteRecipeButton = ({recipeId}) => {
+    const deleteRecipe = useRecipeStore(state => state.deleteRecipe);
+
+    const handleDelete = () => {
+      deleteRecipe(recipeId);
+    }
 
     return (
       <div>
-          {recipes.map(recipe => (
-            <div key={recipe.id}>
-              <button
-                onClick={() => deleteRecipe(recipe.id)}
-              >
-                Delete
-              </button>
-            </div>
-          ))}
+              <button onClick={handleDelete}>Delete</button>
       </div>
     );
 }
