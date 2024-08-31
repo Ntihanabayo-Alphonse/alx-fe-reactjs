@@ -1,16 +1,29 @@
 import React, { useState } from 'react'
 
 const RegistrationForm = () => {
-    const [formData, setFormData] = useState({username: '', email: '', password: ''});
+    const [username, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
-    const handleChange = (e) => {
-        const {name, value} = e.target;
-        setFormData(prevState => ({...prevState, [name]: value}));
-    }
+    const handleUsername = (e) => {
+        setName(e.target.value);
+    };
+
+    // Handling the email change
+    const handleEmail = (e) => {
+        setEmail(e.target.value);
+    };
+
+    // Handling the password change
+    const handlePassword = (e) => {
+        setPassword(e.target.value);
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formData);
+        console.log(username);
+        console.log(email);
+        console.log(password);
     }
 
   return (
@@ -18,22 +31,22 @@ const RegistrationForm = () => {
         <input type="text" 
             placeholder='Username'
             name='username'
-            value={formData.username}
-            onChange={handleChange}
+            value={username}
+            onChange={handleUsername}
             required
         />
         <input type="email" 
             placeholder='Email'
             name='email'
-            value={formData.email}
-            onChange={handleChange}
+            value={email}
+            onChange={handleEmail}
             required
         />
         <input type="password" 
             placeholder='Password'
             name='password'
-            value={formData.password}
-            onChange={handleChange}
+            value={password}
+            onChange={handlePassword}
             required
         />
         <button type="submit">Submit</button>
