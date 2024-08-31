@@ -4,7 +4,9 @@ const RegistrationForm = () => {
     const [username, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [error, setError] = useState(false);
 
+    // Handling the username change
     const handleUsername = (e) => {
         setName(e.target.value);
     };
@@ -19,8 +21,30 @@ const RegistrationForm = () => {
         setPassword(e.target.value);
     };
 
+    
+
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (!username) {
+            setError(true)
+            console.log(error)
+        } else {
+            setError(false)
+        }
+
+        if (!email) {
+            setError(true)
+            console.log(error)
+        } else {
+            setError(false)
+        }
+    
+        if (!password) {
+            setError(true)
+            console.log(error)
+        } else {
+            setError(false)
+        }
         console.log(username);
         console.log(email);
         console.log(password);
@@ -33,21 +57,18 @@ const RegistrationForm = () => {
             name='username'
             value={username}
             onChange={handleUsername}
-            required
         />
         <input type="email" 
             placeholder='Email'
             name='email'
             value={email}
             onChange={handleEmail}
-            required
         />
         <input type="password" 
             placeholder='Password'
             name='password'
             value={password}
             onChange={handlePassword}
-            required
         />
         <button type="submit">Submit</button>
     </form>
