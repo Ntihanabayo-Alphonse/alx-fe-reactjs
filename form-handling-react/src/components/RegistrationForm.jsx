@@ -4,7 +4,7 @@ const RegistrationForm = () => {
     const [username, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [error, setError] = useState(false);
+    const [error, setErrors] = useState(false);
 
     // Handling the username change
     const handleUsername = (e) => {
@@ -26,24 +26,24 @@ const RegistrationForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!username) {
-            setError(true)
+            setErrors(true)
             console.log(error)
         } else {
-            setError(false)
+            setErrors(false)
         }
 
         if (!email) {
-            setError(true)
+            setErrors(true)
             console.log(error)
         } else {
-            setError(false)
+            setErrors(false)
         }
     
         if (!password) {
-            setError(true)
+            setErrors(true)
             console.log(error)
         } else {
-            setError(false)
+            setErrors(false)
         }
         console.log(username);
         console.log(email);
