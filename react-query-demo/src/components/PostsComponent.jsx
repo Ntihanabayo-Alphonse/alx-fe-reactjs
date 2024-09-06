@@ -10,7 +10,7 @@ const PostsComponent = () => {
     const { data, isLoading, isError } = useQuery('fetchingPosts', fetchPosts);
 
     if (isLoading) return <div>Loading...</div>;
-    if (isError) return <div>Error: {isError}, try again!</div>;
+    if (isError) return <div>error: {isError}, try again!</div>;
     return (
         <>
             {data.map(post => {
