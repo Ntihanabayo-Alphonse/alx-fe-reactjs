@@ -20,7 +20,7 @@ const HomePage = () => {
     return (
         <>
         <h1 className='font-bold font-sans text-center md:text-4xl text-3xl mb-10'>Recipe Sharing Platform</h1>
-            <div className="card_container grid grid-cols-1 md:grid-cols-3 gap-8 md:h-full">
+            <div className="card_container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:h-full">
                 {
                     data.map(recipe =>
                         <div key={recipe.id} className="card rounded-xl overflow-hidden shadow-md h-full sm:h-full hover:shadow-xl duration-500 cursor-pointer">
