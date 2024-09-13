@@ -7,20 +7,22 @@ const fetchPosts = async () => {
 }
 
 const PostsComponent = () => {
-    const { data, isLoading, isError } = useQuery('fetchingPosts', fetchPosts);
+    const { data, isLoading, error } = useQuery('fetchingPosts', fetchPosts, {
+        // cacheTime: 
+    });
 
     if (isLoading) return <div>Loading...</div>;
-    if (isError) return <div>error: {isError}, try again!</div>;
+    if (error) return <div>isError: {error}, try again!</div>;
     return (
         <>
+        <ul>
             {data.map(post => {
-                <div key={post.id}>
-                    <ul>
-                        <li>{post.title}</li>
-                    </ul>
-                </div>
-                console.log(`${post.id}. ${post.title}`);
+                    
+                        <li key={post.id}>{post.title}</li>
+                    
+                // console.log(`${post.id}. ${post.title}`);
             })}
+        </ul>
         </>
     )
 }
