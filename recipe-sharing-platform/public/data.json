@@ -1,14 +1,86 @@
 [
-    {
-      "id": 1,
-      "title": "Spaghetti Carbonara",
-      "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-      "image": "https://via.placeholder.com/150"
-    },
-    {
-      "id": 2,
-      "title": "Chicken Tikka Masala",
-      "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-      "image": "https://via.placeholder.com/150"
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://via.placeholder.com/150",
+    "description": "A classic Italian pasta dish, Spaghetti Carbonara is made with eggs, cheese (typically Pecorino Romano or Parmesan), pancetta (or guanciale), and pepper. It is simple yet creamy and flavorful, with no cream or butter involved.",
+    "ingredients": [
+      "400g spaghetti",
+      "150g pancetta or guanciale (cut into small pieces)",
+      "2 large eggs",
+      "100g Pecorino Romano or Parmesan cheese (grated)",
+      "Freshly ground black pepper",
+      "Salt (for pasta water)",
+      "2 cloves garlic (optional)",
+      "Olive oil (optional, for sautéing)"
+    ],
+    "procedures": [
+      "Bring a large pot of salted water to a boil. Cook the spaghetti until al dente, according to package instructions.",
+      "While the pasta is cooking, in a skillet over medium heat, cook the pancetta (or guanciale) until crispy, about 5-7 minutes. You can add the garlic if you like, for extra flavor. Set aside.",
+      "In a bowl, whisk together the eggs and cheese, along with a generous amount of black pepper.",
+      "Drain the spaghetti, but reserve about ½ cup of the pasta water.",
+      "Toss the hot pasta in the pan with the pancetta to coat it in the fat.",
+      "Remove the pan from heat, and slowly add the egg and cheese mixture while tossing the pasta quickly. The heat from the pasta will cook the eggs and create a creamy sauce. Add a little reserved pasta water if the mixture is too thick.",
+      "Serve immediately with extra cheese and pepper on top."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+    "image": "https://via.placeholder.com/150",
+    "description": "Chicken Tikka Masala is a flavorful and rich dish of grilled chicken pieces in a creamy, spiced tomato sauce. It’s a popular dish in Indian cuisine and loved worldwide.",
+    "ingredients": [
+      "500g boneless chicken (cut into chunks)",
+      "½ cup plain yogurt",
+      "1 tbsp lemon juice",
+      "1 tsp turmeric",
+      "1 tsp garam masala",
+      "1 tsp ground cumin",
+      "1 tsp ground coriander",
+      "1 tsp paprika",
+      "2 garlic cloves (minced)",
+      "1-inch piece of ginger (minced)",
+      "Salt, to taste"
+    ],
+    "procedures": [
+      "Mix all the ingredients in a bowl. Add the chicken chunks, coat well, and marinate for at least 1 hour (preferably overnight in the fridge).",
+      "Preheat the grill or oven to medium-high heat. Thread the marinated chicken onto skewers and grill or bake them until cooked through and slightly charred, about 10-15 minutes. Remove and set aside.",
+      "Heat oil in a large pan over medium heat. Sauté the onions until golden, then add garlic, ginger, and spices (cumin, paprika, turmeric, garam masala) and cook until fragrant.",
+      "Add the crushed tomatoes, simmer for 10 minutes, then pour in the cream. Stir well and season with salt and pepper to taste.",
+      "Add the grilled chicken pieces into the sauce and simmer for another 5-10 minutes to absorb the flavors.",
+      "Garnish with fresh cilantro and serve hot with rice or naan."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Stew – The Dish of Life",
+    "summary": "A stew is a combination of larger-cut ingredients that are just barely covered with cooking liquid, and simmered over low heat for a lengthier period of time",
+    "image": "https://via.placeholder.com/150",
+    "description": "Stew is a hearty dish made by simmering meat, vegetables, and broth for an extended period. It’s a comfort food with endless variations, providing a rich and warming experience, perfect for colder days.",
+    "ingredients": [
+      "500g beef (or lamb, pork, or chicken), cut into cubes",
+      "2 tbsp olive oil",
+      "1 large onion (chopped)",
+      "2 cloves garlic (minced)",
+      "3 large carrots (cut into chunks)",
+      "3 potatoes (cut into cubes)",
+      "2 celery stalks (chopped)",
+      "1 can (400g) diced tomatoes",
+      "4 cups beef or chicken broth",
+      "1 tsp dried thyme",
+      "1 bay leaf",
+      "Salt and pepper to taste",
+      "Fresh parsley (for garnish)"
+    ],
+    "procedures": [
+      "Heat olive oil in a large pot over medium heat. Brown the meat on all sides, working in batches if necessary. Remove the meat and set aside.",
+      "In the same pot, sauté the onions, garlic, carrots, and celery until softened, about 5 minutes.",
+      "Add the browned meat back into the pot along with the potatoes, diced tomatoes, broth, thyme, bay leaf, salt, and pepper. Bring to a boil.",
+      "Once boiling, reduce the heat to low and simmer for 1.5 to 2 hours, stirring occasionally, until the meat is tender and the flavors have melded together.",
+      "Remove the bay leaf, adjust seasoning if necessary, and garnish with fresh parsley before serving.",
+      "Serve with crusty bread or over rice."
+    ]
+  }
+]
