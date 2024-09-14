@@ -23,7 +23,7 @@ const RecipeDetail = () => {
         return <div>Loading...</div>;
     }
 
-    const { title, summary, image, description, ingredients, procedures } = recipe;
+    const { title, summary, image, description, ingredients, instructions } = recipe;
 
     return (
         <>
@@ -43,11 +43,11 @@ const RecipeDetail = () => {
                             ))
                         }
                     </ul>
-                    <p className='text-zinc-600 font-sans mx-6 font-bold mt-4'>Procedures</p>
+                    <p className='text-zinc-600 font-sans mx-6 font-bold mt-4'>Instructions</p>
                     <ol className='mx-16 list-decimal'>
                         {
-                            procedures.map((procedure, index) => (
-                                <li key={index}>{procedure}</li>
+                            instructions.map((instruction, index) => (
+                                <li key={index}>{instruction}</li>
                             ))
                         }
                     </ol>
