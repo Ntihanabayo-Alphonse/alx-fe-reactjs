@@ -1,22 +1,8 @@
-import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
-const githubService = () => {
-
-    const [ user, setUser ] = useState();
-
-    const fetchUserData = () => {
-        axios.get(`https://api.github.com/users/${username}`)
-            .then(response => setUser(response.json()));
-    }
-
-    useEffect(() => {
-        fetchUserData();
-    }, []);
-
-  return (
-    <div>githubService</div>
-  )
+const fetchUserData = async (username) => {
+    const response = await axios.get(`https://api.github.com/users/${username}`)
+    return response.data;
 }
 
-export default githubService
+export default fetchUserData
